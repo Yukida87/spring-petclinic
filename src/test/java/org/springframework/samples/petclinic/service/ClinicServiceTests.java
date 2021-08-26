@@ -87,7 +87,7 @@ class ClinicServiceTests {
 		assertThat(owners).hasSize(2);
 
 		owners = this.owners.findByLastName("Daviss");
-		assertThat(owners.isEmpty()).isFalse();
+		assertThat(owners).isEmpty();
 	}
 
 	@Test
